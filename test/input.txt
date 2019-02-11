@@ -46,9 +46,11 @@
   list
   add Charlie Dickson pp/333333 e/charlie.d@nus.edu.sg a/333, gamma street t/friends t/school
   list
+  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy
+  list
   add Dickson Ee p/444444 pe/dickson@nus.edu.sg a/444, delta street t/friends
   list
-  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy
+  sort
   list
 
   # should not allow adding duplicate persons
@@ -78,13 +80,13 @@
 
   # should show only non private details for view
   view 3
-  view 4
   view 5
+  view 4
 
   # should show all details even private for viewall
   viewall 3
-  viewall 4
   viewall 5
+  viewall 4
 
 ##########################################################
 # test find persons command
@@ -133,7 +135,7 @@
   list
 
   # deletes correct person
-  delete 4
+  delete 3
   list
 
   # listing indexes get updated on next request

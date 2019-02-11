@@ -1,5 +1,6 @@
 package seedu.addressbook.data.person;
 
+import java.util.Comparator;
 import java.util.Set;
 
 import seedu.addressbook.data.tag.Tag;
@@ -8,7 +9,7 @@ import seedu.addressbook.data.tag.Tag;
  * A read-only immutable interface for a Person in the addressbook.
  * Implementations should guarantee: details are present and not null, field values are validated.
  */
-public interface ReadOnlyPerson {
+public interface ReadOnlyPerson extends Comparable<ReadOnlyPerson> {
 
     Name getName();
     Phone getPhone();
